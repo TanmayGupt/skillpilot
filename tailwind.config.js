@@ -1,26 +1,12 @@
-{
-"name": "skillpilot",
-"private": true,
-"version": "1.0.0",
-"type": "module",
-"scripts": {
-"dev": "vite",
-"build": "vite build",
-"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-"preview": "vite preview"
+/* STREAMING_CHUNK:Configuring Tailwind content paths and extend tokens... /
+/* @type {import('tailwindcss').Config} /
+export default {
+content: [
+"./index.html",
+"./src//.{js,ts,jsx,tsx}",
+],
+theme: {
+extend: {},
 },
-"dependencies": {
-"lucide-react": "^0.344.0",
-"react": "^18.2.0",
-"react-dom": "^18.2.0"
-},
-"devDependencies": {
-"@types/react": "^18.2.66",
-"@types/react-dom": "^18.2.22",
-"@vitejs/plugin-react": "^4.2.1",
-"autoprefixer": "^10.4.19",
-"postcss": "^8.4.38",
-"tailwindcss": "^3.4.1",
-"vite": "^5.2.0"
-}
+plugins: [],
 }
